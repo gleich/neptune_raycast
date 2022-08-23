@@ -14,11 +14,23 @@
       "name": "index",
       "title": "School Note",
       "description": "Create a new note for a class",
-      "mode": "view"
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "token",
+          "type": "password",
+          "required": true,
+          "title": "Token",
+          "description": "Account Token",
+          "link": "https://api.mattglei.ch"
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.39.1"
+    "@raycast/api": "^1.39.1",
+    "@raycast/utils": "^1.1.0",
+    "node-fetch": "^3.2.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
